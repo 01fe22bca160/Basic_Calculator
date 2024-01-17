@@ -40,6 +40,15 @@ class Calculator{
         return(operand_1/operand_2);
 
     }
+    /**
+     * The function "square" takes a float number as input and returns the square of that number.
+     * 
+     * @param operand_1 A float value representing the operand to be squared.
+     * @return the square of the operand_1.
+     */
+    float square(float operand_1){
+        return(operand_1*operand_1);
+    }
 
     public static void main(String[] args) {
         Calculator calc=new Calculator();
@@ -53,5 +62,8 @@ class Calculator{
         System.out.println("Result is:"+mul_result);
         float div_result=calc.division(operand_1, operand_2);
         System.out.println("Result is:"+div_result);
+        
+        float squ_reslt=calc.square(operand_1);
+        System.out.println("Result is:"+squ_reslt);
     }
 }
